@@ -23,16 +23,16 @@ Model -> ViewModel -> View
 
 ```
 
-    ### ☑️ ViewModel 사용법
-    
-    1. **ViewModel 클래스 정의**
-        1. ViewModel 을 상속하여 class를 선언
+### ☑️ ViewModel 사용법
+
+1. **ViewModel 클래스 정의**
+    1. ViewModel 을 상속하여 class를 선언
+
+ ```kotlin
+ class HomeViewModel() : ViewModel() {
+ ```
         
-        ```kotlin
-        class HomeViewModel() : ViewModel() {
-        ```
-        
-    2. **Activity 또는 Fragment에서 ViewModel 인스턴스 가져오기**
+ 3. **Activity 또는 Fragment에서 ViewModel 인스턴스 가져오기**
         
         ```kotlin
         class MyActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ Model -> ViewModel -> View
             private val viewModel: HomeViewModel by viewModels()
         ```
         
-    3. **Activity의 ViewModel을 Fragment끼리 공유할 경우**
+    4. **Activity의 ViewModel을 Fragment끼리 공유할 경우**
         1. **`activityViewModels`**를 사용하면 프래그먼트가 속한 액티비티의 **`ViewModel`** 인스턴스를 얻을 수 있으며, 액티비티와 여러 프래그먼트 간에 데이터를 공유할 수 있어요
         
         ```kotlin
