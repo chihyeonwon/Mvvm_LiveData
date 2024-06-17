@@ -1,5 +1,8 @@
 MVVM 아키텍처는 API 호출을 할 때 가장 유용하게 쓰이는 아키텍처 패턴이다.
 
+mv -> network(RetrofitInstance), model(kotlin from json), repository(service)
+vm -> ui(fragment view model, service의 api 호출)
+
 ## **앱의 진화 : 아키텍처, MVVM 패턴과 LiveData**
 
 <aside>
